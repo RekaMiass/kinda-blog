@@ -34,7 +34,7 @@ const socialNetworks = [
 
 const SocialNetworks = ({ className }) => {
   return (
-    <ScreenEgg type="left">
+    <ScreenEgg>
       <ul className={cn(className, styles.list)}>
         {socialNetworks.map((socialNetwork) => (
           <li key={socialNetwork.id} className={styles.listItem}>

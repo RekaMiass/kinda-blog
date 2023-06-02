@@ -1,11 +1,23 @@
-import React from 'react';
+import React from "react";
 import cn from "classnames";
 import styles from "./index.module.scss";
+import ScreenEgg from "../ScreenEgg";
 
-const BuyMeCoffee = ({className}) => {
+const BuyMeCoffee = ({ className }) => {
   return (
-    <div>BuyMeCoffee</div>
-  )
-}
+    <ScreenEgg type="right">
+      <div className={cn(className, styles.buyCoffee)}>
+        <a
+          href="https://www.tinkoff.ru/"
+          target="_blank"
+          className={styles.buyCoffeeButton}
+          rel="noreferrer"
+        >
+          Buy me a coffee...
+        </a>
+      </div>
+    </ScreenEgg>
+  );
+};
 
-export default BuyMeCoffee
+export default BuyMeCoffee;
