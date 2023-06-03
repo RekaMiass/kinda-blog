@@ -17,7 +17,7 @@ export default async function post(req, res) {
 
 export async function loadPosts(start, end) {
   const query = `{
-    "posts": *[_type == "post"] | order(publishedDate desc) {_id, publishedDate, title, slug, description, image},
+    "posts": *[_type == "post"] | order(publishedDate desc) [${start} ...${end}] {_id, publishedDate, title, slug, description, image},
     "total": count(*[_type == "post"])
   }`;
   const { posts, total } = await client.fetch(query);
