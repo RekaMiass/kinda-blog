@@ -1,7 +1,7 @@
 export default {
   name: 'post',
   type: 'document',
-  title: 'Post 1',
+  title: 'Post',
   groups: [
     {
       name: 'content',
