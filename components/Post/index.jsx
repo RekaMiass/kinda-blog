@@ -4,6 +4,7 @@ import Link from "next/link";
 import cn from "classnames";
 import { urlFor } from "@/lib/client";
 import Title from "../Title";
+
 import styles from "./index.module.scss";
 
 const Post = ({ className, image, title, description, slug }) => {
@@ -12,7 +13,7 @@ const Post = ({ className, image, title, description, slug }) => {
       href={`/post/${encodeURIComponent(slug.current)}`}
       className={cn(className, styles.post)}
     >
-      <a className={styles.postLink} href="">
+      <a className={styles.postLink}>
         <Title type="small" className={styles.postTitle}>
           {title}
         </Title>

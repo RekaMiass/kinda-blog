@@ -1,7 +1,8 @@
 import React from "react";
 import cn from "classnames";
-import styles from "./index.module.scss";
 import ScreenEgg from "../ScreenEgg";
+
+import styles from "./index.module.scss";
 
 const BuyMeCoffee = ({ className }) => {
   return (

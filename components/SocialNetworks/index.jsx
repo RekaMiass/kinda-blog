@@ -6,8 +6,9 @@ import {
   AiFillTwitterCircle,
   AiFillInstagram,
 } from "react-icons/ai";
-import styles from "./index.module.scss";
 import ScreenEgg from "../ScreenEgg";
+
+import styles from "./index.module.scss";
 
 const socialNetworks = [
   {

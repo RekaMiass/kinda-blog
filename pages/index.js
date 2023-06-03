@@ -8,6 +8,7 @@ import Title from "@/components/Title";
 import PostGrid from "@/components/PostGrid";
 import Post from "@/components/Post";
 import Button from "@/components/Button";
+import Head from "next/head";
 
 const LOAD_MORE_STEP = 4;
 
@@ -36,6 +37,9 @@ export default function Home({ initialPosts, total }) {
 
   return (
     <div>
+    <Head>
+      <title>Super Blog</title>
+    </Head>
       <Section>
         <Cover title="Maria<br /> Avramenko" />
         <SocialNetworks />
